@@ -4,7 +4,7 @@
 
 define e = Character("Eileen", color="#33fff0")
 define a = Character("[Jugador]")
-
+define n = Character("???")
 
 # El juego comienza aquí.
 
@@ -37,6 +37,26 @@ label start:
         $ Jugador = "Jugador"
     image bg BUG="HRR.jpg"
     scene bg BUG
+
+    n "Y cuales son tus pronombres?"
+#hola
+#Amongus
+    menu:
+        "Ella":
+            $ player_pronoun = "la"
+            $ player_pronoun_possessive = "su"
+            $ player_pronoun_reflexive = "ella misma"
+            $ player_pronoun_subject = "she"
+        "El":
+            $ player_pronoun = "el"
+            $ player_pronoun_possessive = "su"
+            $ player_pronoun_reflexive = "el mismo"
+            $ player_pronoun_subject = "he"
+        "Elles":
+            $ player_pronoun = "elle"
+            $ player_pronoun_possessive = "their"
+            $ player_pronoun_reflexive = "elle misme"
+            $ player_pronoun_subject = "they"
 
     e "Has creado un nuevo juego Ren'Py."
     e "Añade una historia, imágenes y música, ¡y puedes presentarlo al mundo!"
