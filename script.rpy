@@ -39,7 +39,7 @@ label start:
     scene bg BUG
 
     n "Y cuales son tus pronombres?"
-
+#hola
     menu:
         "Ella":
             $ player_pronoun = "la"
