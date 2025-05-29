@@ -40,6 +40,7 @@ label start:
 
     n "Y cuales son tus pronombres?"
 #hola
+#Amongus
     menu:
         "Ella":
             $ player_pronoun = "la"
